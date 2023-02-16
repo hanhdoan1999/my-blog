@@ -1,7 +1,7 @@
 <template>
 <div>
 <div class="text-4xl font-special flex justify-center items-center my-8">
-    <p>Omg ! This is my blog</p>
+    <p>My Blog - Demo</p>
 </div>  
  <nav>
         <ul>

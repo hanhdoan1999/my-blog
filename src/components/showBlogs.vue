@@ -11,7 +11,7 @@
             <div class="relative group-hover:bg-gray-100">
                  <button   class="focus:outline-none absolute flex w-full h-full items-start justify-end opacity-0 group-hover:opacity-100 "><span v-on:click.prevent='deleteBlog(blog)' class="material-icons z-20">close</span></button>
                  <router-link v-bind:to="'/blog/' + blog.id" class="absolute flex w-full h-full items-center justify-center z-10 opacity-0 group-hover:opacity-100"><span class="font-title text-lg font-semibold hover:border-opacity-100 border-gray-500 border-b border-opacity-0">Show more</span></router-link>
-                 <img :src="`${blog.fileName}`" class="w-52 h-52 object-cover group-hover:opacity-40">
+                 <img :src="`${blog.fileName}`" class="w-full h-52 object-cover group-hover:opacity-40">
             </div> 
                 <router-link v-bind:to="'/blog/' + blog.id"><h2 class="font-title text-xl my-2 ">{{ blog.title }}</h2></router-link>
                 <p class="text-md truncate group-hover:opacity-50 ">{{ blog.content }}</p>
