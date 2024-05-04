@@ -7,7 +7,7 @@
         <ul>
             <li class="capitalize"><router-link to="/" exact>All Blog Articles</router-link></li>
             <li class="capitalize"><router-link to="/add" exact>Add a new blog</router-link></li>
-            <li class="capitalize"><router-link to="/tag" exact>Add a new tag</router-link></li>
+            <!-- <li class="capitalize"><router-link to="/tag" exact>Add a new tag</router-link></li> -->
         </ul>
     </nav>
 </div>

@@ -1,6 +1,6 @@
 <template>
     <div id="add-blog" class="mx-20 my-10">
-        <h2  v-if="!submitted" class="text-3xl font-semibold my-5 text-center">Add a New Blog Post</h2>
+        <h2  v-if="!submitted" class="text-3xl font-semibold my-5 text-center uppercase">Add a New Blog Post</h2>
             <!-- <div id="checkboxes">
                 <p>Blog Categories:</p>
                 <label>Ninjas</label>
@@ -54,11 +54,7 @@
       <el-checkbox label="Friends" name="type"></el-checkbox>
     </el-checkbox-group>
   </el-form-item>
-    <el-form-item label="Tags: (Đang cập nhật)">
-    <el-checkbox-group v-model="blog.tags">
-      <el-checkbox v-for="tag in tags" :key="tag.lable" :label="tag.lable">{{tag.lable}}</el-checkbox>
-    </el-checkbox-group>
-  </el-form-item>
+    
   <el-form-item>
     <el-button type="primary" v-on:click.prevent="post('blog')">Add Blog</el-button>
      <el-button @click="resetForm('blog')">Reset</el-button>
